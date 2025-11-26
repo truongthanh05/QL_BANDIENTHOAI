@@ -1,9 +1,11 @@
 ﻿@model QL_BANDIENTHOAI.Models.TaiKhoan
 @{
-    Layout = null;                         // không dùng layout
-    ViewBag.Title = "Login";
-    var returnUrl = ViewBag.ReturnUrl as string;   // nhận returnUrl từ controller (nếu có)
+    Layout = null;
+    ViewBag.Title = "Đăng nhập";
+    var returnUrl = ViewBag.ReturnUrl as string;
 }
+
+@Html.Partial("_HeaderCustom")
 
 <!DOCTYPE html>
 <html>
@@ -12,14 +14,13 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
 
-    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Font Awesome (icon) -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
 
     <style>
         body {
-            background: #f0f4ff;
+            background: #f5f7ff;
+            font-family: Arial;
         }
 
         .auth-card {
@@ -27,26 +28,14 @@
             border-radius: 16px;
         }
 
-            .auth-card .card-body {
-                padding: 32px;
-            }
-
         .auth-title {
             font-weight: 700;
+            font-size: 22px;
             margin-bottom: 8px;
+            color: #c8242e;
         }
 
-        .auth-sub {
-            color: #6c757d;
-            margin-bottom: 24px;
-        }
-
-        .form-control {
-            border-radius: 8px;
-            padding-left: 40px;
-        }
-
-        .position-relative .input-icon {
+        .input-icon {
             position: absolute;
             left: 12px;
             top: 50%;
@@ -54,101 +43,99 @@
             color: #6c757d;
         }
 
-        .btn-primary {
-            background-color: #0056d2;
+        .form-control {
+            border-radius: 8px;
+            padding-left: 38px;
+        }
+
+        .btn-login {
+            background: #c8242e;
             border: none;
-            font-weight: 600;
             padding: 12px;
             border-radius: 8px;
+            color: #fff;
+            font-weight: bold;
         }
 
-            .btn-primary:hover {
-                background-color: #0041a8;
-            }
+        .btn-login:hover {
+            background: #a01822;
+        }
 
         .link {
+            color: #c8242e;
             text-decoration: none;
-            color: #0056d2;
         }
 
-            .link:hover {
-                text-decoration: underline;
-            }
+        .link:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
+
 <body>
 
     <div class="container d-flex justify-content-center align-items-center vh-100">
-        <div class="card auth-card shadow p-4" style="width:100%; max-width: 420px;">
-            <div class="card-body">
-                <div style="display:flex">
-                    <div class="text-center mb-3">
-                        <img src="~/Assets/bv-dh-yduoc.png" alt="Logo" style="height: 60px;" />
-                    </div>
-                    <h5 class="text-center auth-title">
-                        Chào mừng bạn đến với <span style="color:#0056d2;">UMC CARE</span>
-                    </h5>
+
+        <div class="card shadow auth-card p-4" style="width:100%; max-width:420px;">
+
+            <div class="text-center mb-3">
+                <img src="~/Content/img/logo.png" style="height: 60px;" />
+            </div>
+
+            <h4 class="text-center auth-title">Đăng nhập hệ thống</h4>
+            <p class="text-center text-muted mb-4">Vui lòng nhập thông tin tài khoản</p>
+
+            @if (TempData["Msg"] != null)
+            {
+                <div class="alert alert-success">@TempData["Msg"]</div>
+            }
+
+            @if (ViewBag.Error != null)
+            {
+                <div class="alert alert-danger">@ViewBag.Error</div>
+            }
+
+            @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { @class = "needs-validation" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.Hidden("returnUrl", returnUrl ?? "")
+
+                <!-- USERNAME -->
+                <div class="mb-3 position-relative">
+                    <i class="fa-solid fa-user input-icon"></i>
+                    @Html.TextBoxFor(m => m.TENTK, new { @class = "form-control", placeholder = "Tên đăng nhập", required = "required" })
                 </div>
 
-                <p class="text-center auth-sub">Vui lòng đăng nhập để tiếp tục</p>
+                <!-- PASSWORD -->
+                <div class="mb-3 position-relative">
+                    <i class="fa-solid fa-lock input-icon"></i>
+                    @Html.PasswordFor(m => m.MATKHAU, new { @class = "form-control", placeholder = "Mật khẩu", required = "required" })
+                </div>
 
-                @if (TempData["Msg"] != null)
-                {
-                    <div class="alert alert-success">@TempData["Msg"]</div>
-                }
+                <button type="submit" class="btn-login w-100">Đăng nhập</button>
 
-                @using (Html.BeginForm("Login", "Account", FormMethod.Post, new { @class = "needs-validation", novalidate = "novalidate" }))
-                {
-                    @Html.AntiForgeryToken()
-                    @Html.Hidden("returnUrl", returnUrl ?? "")
+                <div class="text-center mt-3">
+                    <a class="link" href="@Url.Action("ForgotPassword","Account")">Quên mật khẩu?</a>
+                </div>
 
-                    <div class="mb-3 position-relative">
-                        <label for="user" class="form-label">Tài khoản</label>
-                        <i class="fa-solid fa-user input-icon"></i>
-                        @Html.TextBoxFor(m => m.TENTK, new { @class = "form-control", placeholder = "Nhập tài khoản", autocomplete = "username", required = "required" })
-                        @Html.ValidationMessageFor(m => m.TENTK, "", new { @class = "invalid-feedback" })
-                    </div>
+                <hr />
 
-                    <div class="mb-3 position-relative">
-                        <label for="Password1" class="form-label">Mật khẩu</label>
-                        <i class="fa-solid fa-lock input-icon"></i>
-                        @Html.PasswordFor(m => m.MATKHAU, new { @class = "form-control", placeholder = "Nhập mật khẩu", autocomplete = "current-password", required = "required" })
-                        @Html.ValidationMessageFor(m => m.MATKHAU, "", new { @class = "invalid-feedback", id = "password-error" })
-                    </div>
+                <div class="text-center">
+                    <a href="@Url.Action("Register","Account")"
+                       class="btn btn-outline-danger w-100"
+                       style="border-radius:8px;">
+                        Đăng ký tài khoản mới
+                    </a>
+                </div>
+            }
 
-
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="remember">
-                        <label class="form-check-label" for="remember">Lưu thông tin đăng nhập</label>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary w-100">Đăng nhập</button>
-
-                    <div class="text-center mt-3">
-                        <a class="link" href="@Url.Action("ForgotPassword","Account")">Quên mật khẩu?</a>
-                    </div>
-
-
-                    <hr />
-
-                    <div class="text-center">
-                        <a href="@Url.Action("Register","Account")"
-                           class="btn btn-outline-primary w-100"
-                           style="border-radius:8px; font-weight:600;">
-                            Đăng ký tài khoản mới
-                        </a>
-                    </div>
-
-                    <p class="text-danger mt-3 text-center"
-                       style="@(string.IsNullOrWhiteSpace(ViewBag.Error as string) ? "display:none" : "")">
-                        @ViewBag.Error
-                    </p>
-
-                }
-            </div>
         </div>
+
     </div>
 
+    @Html.Partial("_FooterCustom")
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

@@ -2,71 +2,43 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Web;
 using System.Web.Mvc;
+using QL_BANDIENTHOAI.Models;
+using QL_BANDIENTHOAI.Models.ViewModel;
+using QL_BANDIENTHOAI.Services;
 
 namespace QL_BANDIENTHOAI.Controllers
 {
     public class HomeController : Controller
     {
-        public ActionResult Index()
+        private readonly SanPhamService _spService;
+        private readonly DanhGiaService _dgService;
+
+        public HomeController()
         {
-            return View();
+            _spService = new SanPhamService();
+            _dgService = new DanhGiaService();
         }
 
-        public ActionResult About()
+        // ===================== TRANG CHỦ =====================
+        public ActionResult Index(string search, string maloai)
         {
-            ViewBag.Message = "Your application description page.";
+            var list = _spService.GetAll(search, maloai);
 
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-            
-            return View();
-        }
-        public ActionResult DbTest()
-        {
-            var cs = ConfigurationManager.ConnectionStrings["SqlServerDbContext"].ConnectionString;
-
-            try
+            var data = new List<ProductVM>();
+            foreach (var sp in list)
             {
-                using (var conn = new SqlConnection(cs))
+                data.Add(new ProductVM
                 {
-                    conn.Open(); // Test kết nối
-
-                    // Truy vấn 1 lệnh: lấy 1 dòng từ LOAISP
-                    var sql = "SELECT TOP (1) MALOAI, TENLOAI FROM LOAISP ORDER BY MALOAI";
-
-                    using (var cmd = new SqlCommand(sql, conn))
-                    using (var reader = cmd.ExecuteReader())
-                    {
-                        var sb = new StringBuilder();
-                        sb.AppendLine("OK ✅ Connected");
-                        if (reader.Read())
-                        {
-                            var maLoai = reader["MALOAI"] as string;
-                            var tenLoai = reader["TENLOAI"] as string;
-                            sb.AppendLine("Sample row from LOAISP:");
-                            sb.AppendLine($"- MALOAI = {maLoai}");
-                            sb.AppendLine($"- TENLOAI = {tenLoai}");
-                        }
-                        else
-                        {
-                            sb.AppendLine("LOAISP has no rows.");
-                        }
-                        return Content(sb.ToString(), "text/plain", Encoding.UTF8);
-                    }
-                }
+                    SP = sp,
+                    AvgStar = _dgService.GetAvgStar(sp.MaSp),
+                    CountStar = _dgService.GetReviewCount(sp.MaSp)
+                });
             }
-            catch (Exception ex)
-            {
-                return Content("FAIL ❌ " + ex.Message, "text/plain", Encoding.UTF8);
-            }
+
+            ViewBag.DanhMuc = _spService.GetCategories();
+
+            return View(data);
         }
     }
 }

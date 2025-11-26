@@ -1,33 +1,78 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿@model IEnumerable<QL_BANDIENTHOAI.Models.ProductVM>
+
+@{
+    Layout = null;   // KHÔNG ĐỤNG TỚI LAYOUT
 }
 
-<main>
-    <section class="row" aria-labelledby="aspnetTitle">
-        <h1 id="title">ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-        <p><a href="https://asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
-    </section>
+<!-- Header -->
+@Html.Partial("_HeaderCustom")
 
-    <div class="row">
-        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
-            <h2 id="gettingStartedTitle">Getting started</h2>
-            <p>
-                ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-                enables a clean separation of concerns and gives you full control over markup
-                for enjoyable, agile development.
-            </p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-        </section>
-        <section class="col-md-4" aria-labelledby="librariesTitle">
-            <h2 id="librariesTitle">Get more libraries</h2>
-            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-        </section>
-        <section class="col-md-4" aria-labelledby="hostingTitle">
-            <h2 id="hostingTitle">Web Hosting</h2>
-            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-        </section>
-    </div>
-</main>
+<link rel="stylesheet" href="~/Content/CSS/product.css" />
+
+<div class="product-container">
+
+    @if (Model == null || !Model.Any())
+    {
+        <div class="no-result">
+            Không tìm thấy sản phẩm nào.
+        </div>
+    }
+    else
+    {
+        foreach (var item in Model)
+        {
+            var sp = item.SP;
+            var img = sp?.AnhSanPham ?? "/img/no-image.png";
+
+            <div class="product-card"
+                 onclick="location.href='/Detail?masp=@sp.MaSp'">
+                                                                                                                        
+                <!-- Ảnh -->
+                <div class="product-img-box">
+                    <img src="@Url.Content("~/Content" + img)" class="product-img" />
+                </div>
+
+                <!-- Badge giảm giá -->
+                <div class="product-badge">
+                    <span>-10%</span>
+                </div>
+
+                <!-- Thông tin sản phẩm -->
+                <div class="product-info">
+
+                    <!-- Tên SP -->
+                    <div class="product-name">@sp.TenSp</div>
+
+                    <!-- Giá -->
+                    <div class="product-price">
+                        @String.Format("{0:N0} đ", sp.GiaBan)
+                    </div>
+
+                    <!-- Giá cũ -->
+                    <div class="product-oldprice">
+                        @String.Format("{0:N0} đ", sp.GiaBan + 1000000)
+                    </div>
+
+                    <!-- ⭐ Đánh giá -->
+                    <div class="product-rating">
+
+                        @if (item.CountStar == 0)
+                        {
+                            <span class="text-muted">Chưa có đánh giá</span>
+                        }
+                        else
+                        {
+                            <span class="rating-star">⭐ @item.AvgStar.ToString("0.0")</span>
+                            <span class="rating-count">(@item.CountStar)</span>
+                        }
+                    </div>
+
+                </div>
+            </div>
+        }
+    }
+
+</div>
+
+<!-- Footer -->
+@Html.Partial("_FooterCustom")
