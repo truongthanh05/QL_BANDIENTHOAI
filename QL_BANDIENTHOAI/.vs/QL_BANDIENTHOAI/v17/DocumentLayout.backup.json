@@ -3,80 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|c:\\users\\truon\\onedrive\\documents\\ql_bandienthoai\\ql_bandienthoai\\ql_bandienthoai\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|solutionrelative:ql_bandienthoai\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|c:\\users\\truon\\onedrive\\documents\\ql_bandienthoai\\ql_bandienthoai\\ql_bandienthoai\\views\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|solutionrelative:ql_bandienthoai\\views\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|c:\\users\\truon\\onedrive\\documents\\ql_bandienthoai\\ql_bandienthoai\\ql_bandienthoai\\connectionstrings.secret.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|solutionrelative:ql_bandienthoai\\connectionstrings.secret.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\ql_bandienthoai\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|solutionrelative:ql_bandienthoai\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|c:\\users\\truon\\onedrive\\documents\\ql_bandienthoai\\ql_bandienthoai\\ql_bandienthoai\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\ql_bandienthoai\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|solutionrelative:ql_bandienthoai\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|c:\\users\\truon\\onedrive\\documents\\ql_bandienthoai\\ql_bandienthoai\\ql_bandienthoai\\connectionstrings.secret.config||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|solutionrelative:ql_bandienthoai\\connectionstrings.secret.config||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|c:\\users\\truon\\onedrive\\documents\\ql_bandienthoai\\ql_bandienthoai\\ql_bandienthoai\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|solutionrelative:ql_bandienthoai\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|c:\\users\\truon\\onedrive\\documents\\ql_bandienthoai\\ql_bandienthoai\\ql_bandienthoai\\models\\giohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|solutionrelative:ql_bandienthoai\\models\\giohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\ql_bandienthoai\\models\\viewmodel\\forgotpasswordotpviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|solutionrelative:ql_bandienthoai\\models\\viewmodel\\forgotpasswordotpviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|c:\\users\\truon\\onedrive\\documents\\ql_bandienthoai\\ql_bandienthoai\\ql_bandienthoai\\models\\hoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|solutionrelative:ql_bandienthoai\\models\\hoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\ql_bandienthoai\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|solutionrelative:ql_bandienthoai\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|c:\\users\\truon\\onedrive\\documents\\ql_bandienthoai\\ql_bandienthoai\\ql_bandienthoai\\models\\danhgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|solutionrelative:ql_bandienthoai\\models\\danhgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\ql_bandienthoai\\connectionstrings.secret.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|solutionrelative:ql_bandienthoai\\connectionstrings.secret.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|c:\\users\\truon\\onedrive\\documents\\ql_bandienthoai\\ql_bandienthoai\\ql_bandienthoai\\models\\giaohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|solutionrelative:ql_bandienthoai\\models\\giaohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|c:\\users\\truon\\onedrive\\documents\\ql_bandienthoai\\ql_bandienthoai\\ql_bandienthoai\\models\\lichsumua.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|solutionrelative:ql_bandienthoai\\models\\lichsumua.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|c:\\users\\truon\\onedrive\\documents\\ql_bandienthoai\\ql_bandienthoai\\ql_bandienthoai\\models\\chitietpn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|solutionrelative:ql_bandienthoai\\models\\chitietpn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|c:\\users\\truon\\onedrive\\documents\\ql_bandienthoai\\ql_bandienthoai\\ql_bandienthoai\\models\\phieunhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|solutionrelative:ql_bandienthoai\\models\\phieunhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|c:\\users\\truon\\onedrive\\documents\\ql_bandienthoai\\ql_bandienthoai\\ql_bandienthoai\\models\\chitiethd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|solutionrelative:ql_bandienthoai\\models\\chitiethd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|c:\\users\\truon\\onedrive\\documents\\ql_bandienthoai\\ql_bandienthoai\\ql_bandienthoai\\models\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|solutionrelative:ql_bandienthoai\\models\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|c:\\users\\truon\\onedrive\\documents\\ql_bandienthoai\\ql_bandienthoai\\ql_bandienthoai\\models\\loaisp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|solutionrelative:ql_bandienthoai\\models\\loaisp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|c:\\users\\truon\\onedrive\\documents\\ql_bandienthoai\\ql_bandienthoai\\ql_bandienthoai\\models\\chitietgiohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|solutionrelative:ql_bandienthoai\\models\\chitietgiohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|c:\\users\\truon\\onedrive\\documents\\ql_bandienthoai\\ql_bandienthoai\\ql_bandienthoai\\models\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\ql_bandienthoai\\models\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|solutionrelative:ql_bandienthoai\\models\\taikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|c:\\users\\truon\\onedrive\\documents\\ql_bandienthoai\\ql_bandienthoai\\ql_bandienthoai\\models\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|solutionrelative:ql_bandienthoai\\models\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|c:\\users\\truon\\onedrive\\documents\\ql_bandienthoai\\ql_bandienthoai\\ql_bandienthoai\\models\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|solutionrelative:ql_bandienthoai\\models\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|c:\\users\\truon\\onedrive\\documents\\ql_bandienthoai\\ql_bandienthoai\\ql_bandienthoai\\models\\nguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|solutionrelative:ql_bandienthoai\\models\\nguoidung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\ql_bandienthoai\\models\\chitiethd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF8D485D-3440-4F01-8B49-2DF1FCA61BAA}|QL_BANDIENTHOAI\\QL_BANDIENTHOAI.csproj|solutionrelative:ql_bandienthoai\\models\\chitiethd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -91,118 +51,39 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "QL_BANDIENTHOAI\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "QL_BANDIENTHOAI\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAcwDQAAABGAAAAAAAAAA==",
+              "Title": "ForgotPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Views\\Account\\ForgotPassword.cshtml",
+              "RelativeDocumentMoniker": "QL_BANDIENTHOAI\\Views\\Account\\ForgotPassword.cshtml",
+              "ToolTip": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Views\\Account\\ForgotPassword.cshtml",
+              "RelativeToolTip": "QL_BANDIENTHOAI\\Views\\Account\\ForgotPassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-26T07:41:24.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ForgotPasswordOtpViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Models\\ViewModel\\ForgotPasswordOtpViewModel.cs",
+              "RelativeDocumentMoniker": "QL_BANDIENTHOAI\\Models\\ViewModel\\ForgotPasswordOtpViewModel.cs",
+              "ToolTip": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Models\\ViewModel\\ForgotPasswordOtpViewModel.cs",
+              "RelativeToolTip": "QL_BANDIENTHOAI\\Models\\ViewModel\\ForgotPasswordOtpViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T14:55:14.605Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "connectionStrings.secret.config",
-              "DocumentMoniker": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\connectionStrings.secret.config",
-              "RelativeDocumentMoniker": "QL_BANDIENTHOAI\\connectionStrings.secret.config",
-              "ToolTip": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\connectionStrings.secret.config",
-              "RelativeToolTip": "QL_BANDIENTHOAI\\connectionStrings.secret.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-10-29T14:51:40.185Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "connectionStrings.secret.config",
-              "DocumentMoniker": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\connectionStrings.secret.config",
-              "RelativeDocumentMoniker": "QL_BANDIENTHOAI\\connectionStrings.secret.config",
-              "ToolTip": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\connectionStrings.secret.config",
-              "RelativeToolTip": "QL_BANDIENTHOAI\\connectionStrings.secret.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-10-29T14:50:13.137Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-25T17:02:50.658Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "DanhGia.cs",
-              "DocumentMoniker": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Models\\DanhGia.cs",
-              "RelativeDocumentMoniker": "QL_BANDIENTHOAI\\Models\\DanhGia.cs",
-              "ToolTip": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Models\\DanhGia.cs",
-              "RelativeToolTip": "QL_BANDIENTHOAI\\Models\\DanhGia.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T14:49:12.806Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GiaoHang.cs",
-              "DocumentMoniker": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Models\\GiaoHang.cs",
-              "RelativeDocumentMoniker": "QL_BANDIENTHOAI\\Models\\GiaoHang.cs",
-              "ToolTip": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Models\\GiaoHang.cs",
-              "RelativeToolTip": "QL_BANDIENTHOAI\\Models\\GiaoHang.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T14:48:50.168Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LichSuMua.cs",
-              "DocumentMoniker": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Models\\LichSuMua.cs",
-              "RelativeDocumentMoniker": "QL_BANDIENTHOAI\\Models\\LichSuMua.cs",
-              "ToolTip": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Models\\LichSuMua.cs",
-              "RelativeToolTip": "QL_BANDIENTHOAI\\Models\\LichSuMua.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T14:48:28.72Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ChiTietPN.cs",
-              "DocumentMoniker": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Models\\ChiTietPN.cs",
-              "RelativeDocumentMoniker": "QL_BANDIENTHOAI\\Models\\ChiTietPN.cs",
-              "ToolTip": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Models\\ChiTietPN.cs",
-              "RelativeToolTip": "QL_BANDIENTHOAI\\Models\\ChiTietPN.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T14:48:02.435Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PhieuNhap.cs",
-              "DocumentMoniker": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Models\\PhieuNhap.cs",
-              "RelativeDocumentMoniker": "QL_BANDIENTHOAI\\Models\\PhieuNhap.cs",
-              "ToolTip": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Models\\PhieuNhap.cs",
-              "RelativeToolTip": "QL_BANDIENTHOAI\\Models\\PhieuNhap.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T14:47:17.976Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "HoaDon.cs",
-              "DocumentMoniker": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Models\\HoaDon.cs",
-              "RelativeDocumentMoniker": "QL_BANDIENTHOAI\\Models\\HoaDon.cs",
-              "ToolTip": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Models\\HoaDon.cs",
-              "RelativeToolTip": "QL_BANDIENTHOAI\\Models\\HoaDon.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T14:45:50.501Z",
+              "Title": "connectionStrings.secret.config",
+              "DocumentMoniker": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\connectionStrings.secret.config",
+              "RelativeDocumentMoniker": "QL_BANDIENTHOAI\\connectionStrings.secret.config",
+              "ToolTip": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\connectionStrings.secret.config",
+              "RelativeToolTip": "QL_BANDIENTHOAI\\connectionStrings.secret.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-11-25T15:08:39.338Z",
               "EditorCaption": ""
             },
             {
@@ -213,127 +94,72 @@
               "RelativeDocumentMoniker": "QL_BANDIENTHOAI\\Web.config",
               "ToolTip": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Web.config",
               "RelativeToolTip": "QL_BANDIENTHOAI\\Web.config",
-              "ViewState": "AgIAACAAAAAAAAAAAAAswDMAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-10-29T14:35:42.725Z",
+              "WhenOpened": "2025-11-25T15:08:22.041Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ChiTietHD.cs",
-              "DocumentMoniker": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Models\\ChiTietHD.cs",
-              "RelativeDocumentMoniker": "QL_BANDIENTHOAI\\Models\\ChiTietHD.cs",
-              "ToolTip": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Models\\ChiTietHD.cs",
-              "RelativeToolTip": "QL_BANDIENTHOAI\\Models\\ChiTietHD.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T14:46:27.032Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GioHang.cs",
-              "DocumentMoniker": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Models\\GioHang.cs",
-              "RelativeDocumentMoniker": "QL_BANDIENTHOAI\\Models\\GioHang.cs",
-              "ToolTip": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Models\\GioHang.cs",
-              "RelativeToolTip": "QL_BANDIENTHOAI\\Models\\GioHang.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T14:43:54.316Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "SanPham.cs",
-              "DocumentMoniker": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Models\\SanPham.cs",
-              "RelativeDocumentMoniker": "QL_BANDIENTHOAI\\Models\\SanPham.cs",
-              "ToolTip": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Models\\SanPham.cs",
-              "RelativeToolTip": "QL_BANDIENTHOAI\\Models\\SanPham.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T14:45:27.488Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "LoaiSp.cs",
-              "DocumentMoniker": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Models\\LoaiSp.cs",
-              "RelativeDocumentMoniker": "QL_BANDIENTHOAI\\Models\\LoaiSp.cs",
-              "ToolTip": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Models\\LoaiSp.cs",
-              "RelativeToolTip": "QL_BANDIENTHOAI\\Models\\LoaiSp.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T14:44:55.665Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ChiTietGioHang.cs",
-              "DocumentMoniker": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Models\\ChiTietGioHang.cs",
-              "RelativeDocumentMoniker": "QL_BANDIENTHOAI\\Models\\ChiTietGioHang.cs",
-              "ToolTip": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Models\\ChiTietGioHang.cs",
-              "RelativeToolTip": "QL_BANDIENTHOAI\\Models\\ChiTietGioHang.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T14:44:26.77Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 7,
               "Title": "TaiKhoan.cs",
               "DocumentMoniker": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Models\\TaiKhoan.cs",
               "RelativeDocumentMoniker": "QL_BANDIENTHOAI\\Models\\TaiKhoan.cs",
               "ToolTip": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Models\\TaiKhoan.cs",
               "RelativeToolTip": "QL_BANDIENTHOAI\\Models\\TaiKhoan.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAcwBUAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T14:43:32.547Z",
+              "WhenOpened": "2025-11-25T14:51:45.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "QL_BANDIENTHOAI\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "QL_BANDIENTHOAI\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-25T14:49:45.811Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "NhanVien.cs",
-              "DocumentMoniker": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Models\\NhanVien.cs",
-              "RelativeDocumentMoniker": "QL_BANDIENTHOAI\\Models\\NhanVien.cs",
-              "ToolTip": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Models\\NhanVien.cs",
-              "RelativeToolTip": "QL_BANDIENTHOAI\\Models\\NhanVien.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAxAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "QL_BANDIENTHOAI\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "QL_BANDIENTHOAI\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T14:43:08.409Z",
+              "WhenOpened": "2025-11-25T14:45:42.261Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "KhachHang.cs",
-              "DocumentMoniker": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Models\\KhachHang.cs",
-              "RelativeDocumentMoniker": "QL_BANDIENTHOAI\\Models\\KhachHang.cs",
-              "ToolTip": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Models\\KhachHang.cs",
-              "RelativeToolTip": "QL_BANDIENTHOAI\\Models\\KhachHang.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T14:42:39.622Z",
-              "EditorCaption": ""
+              "DocumentIndex": 5,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "QL_BANDIENTHOAI\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "QL_BANDIENTHOAI\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAAAHYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-24T15:25:29.523Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "NguoiDung.cs",
-              "DocumentMoniker": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Models\\NguoiDung.cs",
-              "RelativeDocumentMoniker": "QL_BANDIENTHOAI\\Models\\NguoiDung.cs",
-              "ToolTip": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Models\\NguoiDung.cs",
-              "RelativeToolTip": "QL_BANDIENTHOAI\\Models\\NguoiDung.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAkwBgAAAAtAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "ChiTietHD.cs",
+              "DocumentMoniker": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Models\\ChiTietHD.cs",
+              "RelativeDocumentMoniker": "QL_BANDIENTHOAI\\Models\\ChiTietHD.cs",
+              "ToolTip": "C:\\Users\\truon\\OneDrive\\Documents\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\QL_BANDIENTHOAI\\Models\\ChiTietHD.cs",
+              "RelativeToolTip": "QL_BANDIENTHOAI\\Models\\ChiTietHD.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T14:37:52.026Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-24T15:24:32.071Z"
             }
           ]
         }
