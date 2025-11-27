@@ -10,30 +10,8 @@ namespace QL_BANDIENTHOAI.Services
     {
         private readonly string cs = ConfigurationManager.ConnectionStrings["SqlDbContext"].ConnectionString;
 
-        // =============================
-        // ĐẾM SỐ SẢN PHẨM TRONG GIỎ
-        // =============================
-        public int GetCartCount(string matk)
-        {
-            using (var conn = new SqlConnection(cs))
-            {
-                conn.Open();
-                var cmd = new SqlCommand(@"
-                    SELECT SUM(SOLUONG) 
-                    FROM CHITIETGH 
-                    WHERE MATK = @m", conn);
-
-                cmd.Parameters.AddWithValue("@m", matk);
-
-                var result = cmd.ExecuteScalar();
-                return (result == DBNull.Value || result == null) ? 0 : Convert.ToInt32(result);
-            }
-        }
-
-        // =============================
-        // LẤY ITEMS TRONG GIỎ
-        // =============================
-        public List<CartItem> GetCartItems(string matk)
+        // Lấy danh sách giỏ hàng
+        public List<CartItem> GetCart(string matk)
         {
             var list = new List<CartItem>();
 
@@ -42,81 +20,150 @@ namespace QL_BANDIENTHOAI.Services
                 conn.Open();
 
                 string sql = @"
-                    SELECT gh.MaSP, sp.TenSP, sp.GiaBan, sp.AnhSanPham, gh.SoLuong
+                    SELECT gh.MaSP, sp.TenSP, sp.AnhSanPham, gh.DonGia, gh.SoLuong
                     FROM CHITIETGH gh
                     JOIN SANPHAM sp ON gh.MaSP = sp.MaSP
-                    WHERE gh.MaTK = @m";
+                    WHERE gh.MaTK = @tk";
 
-                using (var cmd = new SqlCommand(sql, conn))
+                var cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@tk", matk);
+
+                var r = cmd.ExecuteReader();
+                while (r.Read())
                 {
-                    cmd.Parameters.AddWithValue("@m", matk);
-                    var r = cmd.ExecuteReader();
-
-                    while (r.Read())
+                    list.Add(new CartItem
                     {
-                        list.Add(new CartItem
-                        {
-                            MaSp = r.GetString(0),
-                            TenSp = r.GetString(1),
-                            GiaBan = Convert.ToDouble(r.GetValue(2)),
-                            AnhSanPham = r.GetString(3),
-                            SoLuong = r.GetInt32(4)
-                        });
-                    }
+                        MaSp = r.GetString(0),
+                        TenSp = r.GetString(1),
+                        AnhSanPham = r.GetString(2),
+                        GiaBan = Convert.ToDouble(r.GetValue(3)),
+                        SoLuong = r.GetInt32(4)
+                    });
                 }
             }
 
             return list;
         }
 
-        // =============================
-        // THÊM VÀO GIỎ HÀNG
-        // =============================
-        public bool AddToCart(string matk, string masp)
+        // Lấy tổng số lượng SP trong giỏ
+        public int GetCartCount(string matk)
         {
             using (var conn = new SqlConnection(cs))
             {
                 conn.Open();
 
-                // 1) Kiểm tra đã có SP trong giỏ chưa
-                string check = @"
-                    SELECT SoLuong 
-                    FROM CHITIETGH 
-                    WHERE MaTK = @tk AND MaSP = @sp";
+                string sql = @"SELECT SUM(SoLuong) FROM CHITIETGH WHERE MaTK = @tk";
 
-                using (var cmd = new SqlCommand(check, conn))
+                var cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@tk", matk);
+
+                var result = cmd.ExecuteScalar();
+
+                return (result == null || result == DBNull.Value)
+                    ? 0
+                    : Convert.ToInt32(result);
+            }
+        }
+
+        // Thêm hoặc tăng số lượng sản phẩm
+        public void AddToCart(string matk, string masp)
+        {
+            using (var conn = new SqlConnection(cs))
+            {
+                conn.Open();
+
+                // KIỂM TRA SP TỒN TẠI TRONG GIỎ CHƯA — SỬA LỖI TenTK → MaTK
+                string check = @"SELECT SoLuong FROM CHITIETGH WHERE MaTK = @tk AND MaSP = @sp";
+
+                var cmd = new SqlCommand(check, conn);
+                cmd.Parameters.AddWithValue("@tk", matk);
+                cmd.Parameters.AddWithValue("@sp", masp);
+
+                var rs = cmd.ExecuteScalar();
+
+                if (rs != null && rs != DBNull.Value)
                 {
-                    cmd.Parameters.AddWithValue("@tk", matk);
-                    cmd.Parameters.AddWithValue("@sp", masp);
+                    // UPDATE +1
+                    string update = @"UPDATE CHITIETGH 
+                                      SET SoLuong = SoLuong + 1 
+                                      WHERE MaTK = @tk AND MaSP = @sp";
 
-                    var result = cmd.ExecuteScalar();
-
-                    // Đã tồn tại → tăng số lượng
-                    if (result != null && result != DBNull.Value)
-                    {
-                        string update = @"
-                            UPDATE CHITIETGH
-                            SET SoLuong = SoLuong + 1
-                            WHERE MaTK = @tk AND MaSP = @sp";
-
-                        var cmdU = new SqlCommand(update, conn);
-                        cmdU.Parameters.AddWithValue("@tk", matk);
-                        cmdU.Parameters.AddWithValue("@sp", masp);
-
-                        return cmdU.ExecuteNonQuery() > 0;
-                    }
+                    var cmdU = new SqlCommand(update, conn);
+                    cmdU.Parameters.AddWithValue("@tk", matk);
+                    cmdU.Parameters.AddWithValue("@sp", masp);
+                    cmdU.ExecuteNonQuery();
                 }
+                else
+                {
+                    // Lấy giá sản phẩm
+                    string getPrice = @"SELECT GiaBan FROM SANPHAM WHERE MaSP = @id";
+                    var cmdP = new SqlCommand(getPrice, conn);
+                    cmdP.Parameters.AddWithValue("@id", masp);
 
-                // 2) Chưa có → INSERT
-                string insert = @"
-                    INSERT INTO CHITIETGH (MaTK, MaSP, SoLuong)
-                    VALUES (@tk, @sp, 1)";
+                    double gia = Convert.ToDouble(cmdP.ExecuteScalar());
 
-                var cmdI = new SqlCommand(insert, conn);
-                cmdI.Parameters.AddWithValue("@tk", matk);
-                cmdI.Parameters.AddWithValue("@sp", masp);
+                    // Insert mới
+                    string insert = @"
+                        INSERT INTO CHITIETGH (MaTK, MaSP, SoLuong, DonGia)
+                        VALUES (@tk, @sp, 1, @gia)";
 
-                return cmdI.ExecuteNonQuery() > 0;
+                    var cmdI = new SqlCommand(insert, conn);
+                    cmdI.Parameters.AddWithValue("@tk", matk);
+                    cmdI.Parameters.AddWithValue("@sp", masp);
+                    cmdI.Parameters.AddWithValue("@gia", gia);
+                    cmdI.ExecuteNonQuery();
+                }
+            }
+        }
+
+        // Giảm số lượng
+        public void Minus(string matk, string masp)
+        {
+            using (var conn = new SqlConnection(cs))
+            {
+                conn.Open();
+
+                string sql = @"SELECT SoLuong FROM CHITIETGH WHERE MaTK = @tk AND MaSP = @sp";
+                var cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@tk", matk);
+                cmd.Parameters.AddWithValue("@sp", masp);
+
+                int sl = Convert.ToInt32(cmd.ExecuteScalar() ?? 0);
+
+                if (sl <= 1)
+                {
+                    string del = @"DELETE FROM CHITIETGH WHERE MaTK = @tk AND MaSP = @sp";
+                    var cmdD = new SqlCommand(del, conn);
+                    cmdD.Parameters.AddWithValue("@tk", matk);
+                    cmdD.Parameters.AddWithValue("@sp", masp);
+                    cmdD.ExecuteNonQuery();
+                }
+                else
+                {
+                    string update = @"UPDATE CHITIETGH SET SoLuong = SoLuong - 1 
+                                      WHERE MaTK = @tk AND MaSP = @sp";
+
+                    var cmdU = new SqlCommand(update, conn);
+                    cmdU.Parameters.AddWithValue("@tk", matk);
+                    cmdU.Parameters.AddWithValue("@sp", masp);
+                    cmdU.ExecuteNonQuery();
+                }
+            }
+        }
+
+        // Xóa sản phẩm
+        public void Remove(string matk, string masp)
+        {
+            using (var conn = new SqlConnection(cs))
+            {
+                conn.Open();
+
+                string sql = @"DELETE FROM CHITIETGH WHERE MaTK = @tk AND MaSP = @sp";
+
+                var cmd = new SqlCommand(sql, conn);
+                cmd.Parameters.AddWithValue("@tk", matk);
+                cmd.Parameters.AddWithValue("@sp", masp);
+                cmd.ExecuteNonQuery();
             }
         }
     }

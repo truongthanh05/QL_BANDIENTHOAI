@@ -42,6 +42,7 @@ namespace QL_BANDIENTHOAI.Controllers
                     conn.Open();
 
                     // Mã hóa mật khẩu người dùng nhập vào
+
                     string hashedPassword = HashPassword(model.MATKHAU?.Trim());
 
                     const string sql = @"

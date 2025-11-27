@@ -7,55 +7,79 @@ namespace QL_BANDIENTHOAI.Controllers
     {
         private readonly GioHangService _cart = new GioHangService();
 
-        // ============================
-        // ADD TO CART
-        // ============================
-        public ActionResult Add(string masp)
-        {
-            // 1. Chưa đăng nhập → chuyển Login
-            if (Session["USER"] == null)
-            {
-                TempData["Msg"] = "Vui lòng đăng nhập để sử dụng giỏ hàng.";
-                return RedirectToAction("Login", "Account");
-            }
-
-            string matk = Session["USER"].ToString();
-
-            // 2. Gọi service để thêm vào giỏ hàng
-            bool ok = _cart.AddToCart(matk, masp);
-
-            if (!ok)
-                TempData["Err"] = "Không thể thêm vào giỏ hàng!";
-
-            return RedirectToAction("Index", "Cart");
-        }
-
-        // ============================
-        // VIEW CART
-        // ============================
+        // =======================
+        // GIỎ HÀNG
+        // =======================
         public ActionResult Index()
         {
-            if (Session["USER"] == null)
+            if (Session["User"] == null)
                 return RedirectToAction("Login", "Account");
 
-            string matk = Session["USER"].ToString();
-            var list = _cart.GetCartItems(matk);
+            string matk = Session["User"].ToString();
+
+            var list = _cart.GetCart(matk);
 
             return View(list);
         }
-        [HttpPost]
-        public JsonResult Addajax(string masp)
+
+        // =======================
+        // THÊM +1 (điều hướng)
+        // =======================
+        public ActionResult Add(string masp)
         {
-            if (Session["USER"] == null)
-                return Json(new { success = false, requireLogin = true });
+            if (Session["User"] == null)
+                return RedirectToAction("Login", "Account");
 
-            string matk = Session["USER"].ToString();
+            string matk = Session["User"].ToString();
+            _cart.AddToCart(matk, masp);
 
-            bool ok = _cart.AddToCart(matk, masp);
+            return RedirectToAction("Index");
+        }
+
+        // =======================
+        // TRỪ -1
+        // =======================
+        public ActionResult Minus(string masp)
+        {
+            if (Session["User"] == null)
+                return RedirectToAction("Login", "Account");
+
+            string matk = Session["User"].ToString();
+            _cart.Minus(matk, masp);
+
+            return RedirectToAction("Index");
+        }
+
+        // =======================
+        // XOÁ SP
+        // =======================
+        public ActionResult Remove(string masp)
+        {
+            if (Session["User"] == null)
+                return RedirectToAction("Login", "Account");
+
+            string matk = Session["User"].ToString();
+            _cart.Remove(matk, masp);
+
+            return RedirectToAction("Index");
+        }
+
+        // =======================
+        // ADD AJAX
+        // =======================
+        [HttpPost]
+        public JsonResult AddAjax(string masp)
+        {
+            if (Session["User"] == null)
+                return Json(new { success = false, message = "not_login" });
+
+            string matk = Session["User"].ToString();
+
+            _cart.AddToCart(matk, masp);
 
             int count = _cart.GetCartCount(matk);
 
-            return Json(new { success = ok, cartCount = count });
+            return Json(new { success = true, cart = count });
         }
     }
 }

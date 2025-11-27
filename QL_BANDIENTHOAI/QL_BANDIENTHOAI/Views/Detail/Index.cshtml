@@ -9,11 +9,14 @@
 
 <div class="detail-container">
 
+    <!-- LEFT: ẢNH -->
     <div class="detail-left">
         <img src="@Url.Content("~/Content" + Model.AnhSanPham)" class="detail-img" />
     </div>
 
+    <!-- RIGHT: THÔNG TIN -->
     <div class="detail-right">
+
         <h2>@Model.TenSp</h2>
 
         <div class="detail-price">
@@ -26,6 +29,8 @@
         </div>
 
         <p class="detail-desc">@Model.MoTa</p>
+
+        <!-- BẢNG THÔNG SỐ -->
         <table class="spec-table">
             <tr><td>RAM</td><td>@Model.Ram</td></tr>
             <tr><td>Bộ nhớ</td><td>@Model.Rom</td></tr>
@@ -40,18 +45,20 @@
             <tr><td>SIM</td><td>@Model.SimCard</td></tr>
         </table>
 
-        <a id="btnAddCart" data-masp="@Model.MaSp" href="#"
-           class="detail-btn"
-           style="background:#c8242e; border:none; color:#fff; font-weight:bold; display:block; text-align:center;">
+        <!-- ADD TO CART -->
+        <a id="btnAddCart"
+           data-masp="@Model.MaSp"
+           href="#"
+           class="detail-btn add-cart-btn">
             <i class="fa-solid fa-cart-plus me-1"></i> Thêm vào giỏ hàng
         </a>
 
     </div>
-
 </div>
 
 <h3 class="related-title">Sản phẩm liên quan</h3>
 
+<!-- RELATED -->
 <div class="related-list">
     @foreach (var item in ViewBag.Related)
     {
@@ -64,52 +71,91 @@
 </div>
 
 @Html.Partial("_FooterCustom")
+
+<!-- ===================================
+      AJAX ADD TO CART
+=================================== -->
 <script>
     $("#btnAddCart").click(function (e) {
-
-        e.preventDefault(); // <--- CHẶN LOAD TRANG
+        e.preventDefault();
 
         var masp = $(this).data("masp");
 
         $.ajax({
-            url: "/Cart/Add",
+            url: "/Cart/AddAjax",
             type: "POST",
             data: { masp: masp },
+
             success: function (res) {
 
-                if (res.requireLogin) {
+                // Chưa đăng nhập → ép login
+                if (res.message === "not_login") {
                     window.location.href = "/Account/Login";
                     return;
                 }
 
+                // Đã đăng nhập → cập nhật icon giỏ hàng
                 if (res.success) {
-                    // Cập nhật icon giỏ hàng
-                    $("#cartCount").text(res.cartCount);
-
-                    // Toast thông báo
+                    $("#cartCount").text(res.cart);
                     showAddToast();
                 }
+            },
+
+            error: function (xhr) {
+                console.log("AJAX ERROR:", xhr.responseText);
             }
         });
     });
 
     function showAddToast() {
-        var toast = $("<div>")
-            .css({
-                position: "fixed",
-                bottom: "20px",
-                right: "20px",
-                background: "#c8242e",
-                color: "#fff",
-                padding: "12px 20px",
-                borderRadius: "8px",
-                zIndex: 9999
-            })
-            .text("🛒 Đã thêm vào giỏ hàng!");
+        var toast = $("<div class='toast-add'>🛒 Đã thêm vào giỏ hàng!</div>");
 
         $("body").append(toast);
-        setTimeout(() => toast.fadeOut(500, () => toast.remove()), 1500);
+
+        setTimeout(() => {
+            toast.addClass("hide");
+            setTimeout(() => toast.remove(), 500);
+        }, 1500);
     }
 </script>
 
+<style>
+    .add-cart-btn {
+        background: #c8242e;
+        border: none;
+        color: #fff;
+        font-weight: bold;
+        padding: 12px 20px;
+        display: block;
+        text-align: center;
+        border-radius: 8px;
+        margin-top: 15px;
+    }
 
+    .toast-add {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #c8242e;
+        color: #fff;
+        padding: 14px 22px;
+        border-radius: 8px;
+        font-size: 15px;
+        z-index: 9999;
+        animation: fadeIn .3s ease;
+    }
+
+    .toast-add.hide {
+        animation: fadeOut .5s ease forwards;
+    }
+
+    keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    keyframes fadeOut {
+        from { opacity: 1; }
+        to { opacity: 0; transform: translateY(10px); }
+    }
+</style>
